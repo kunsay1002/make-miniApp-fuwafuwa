@@ -1,0 +1,15 @@
+<%= form_for(@tweet) do |f| %>
+<div class="row" style="padding-top: 50px;">
+  <div class="col s12 m6 offset-m3">
+    <div class="card white">
+      <div class="card-content black-text">
+        <%= f.label :tweet_text %>
+        <%= f.text_area :text %>  
+      </div>
+      <div class="card-action">
+        <%= f.submit "編集" %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
